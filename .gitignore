@@ -26,6 +26,15 @@
 *.sql
 *.sqlite
 
+# Build Folders #
+#################
+[Bb]in/
+[Oo]bj/
+
+# mstest test results #
+#######################
+TestResults
+
 # OS generated files #
 ######################
 .DS_Store*
