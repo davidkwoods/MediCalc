@@ -30,6 +30,7 @@
 #################
 [Bb]in/
 [Oo]bj/
+_ReSharper.MediCalc/
 
 # mstest test results #
 #######################
