@@ -19,9 +19,9 @@
     <Grid x:Name="LayoutRoot" Background="Transparent">
  
         <!--Panorama control-->
-        <controls:Panorama Title="my application">
+        <controls:Panorama Title="MediCalc">
             <controls:Panorama.Background>
-                <ImageBrush ImageSource="PanoramaBackground.png"/>
+                <ImageBrush ImageSource="MediCalcPanBg.jpg"/>
             </controls:Panorama.Background>
  
             <!--Panorama item one-->
