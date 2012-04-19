@@ -12,7 +12,8 @@
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
     mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
-    shell:SystemTray.IsVisible="True">
+    shell:SystemTray.IsVisible="True"
+    DataContext="{Binding ApgarViewModel, Source={StaticResource ViewModelLocator}}">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
@@ -29,47 +30,52 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="0" Grid.Row="0" Margin="5">Appearance</TextBlock>
-            <toolkit:ListPicker Grid.Column="1" Grid.Row="0" Margin="5" SelectedIndex="0">
-                <toolkit:ListPickerItem Content="Blue or pale all over" />
-                <toolkit:ListPickerItem Content="Extremities blue, body pink" />
-                <toolkit:ListPickerItem Content="Body and extremities pink" />
-            </toolkit:ListPicker>
-            <TextBlock Grid.Column="0" Grid.Row="1" Margin="5">Pulse</TextBlock>
-            <toolkit:ListPicker Grid.Column="1" Grid.Row="1" Margin="5" SelectedIndex="0">
-                <toolkit:ListPickerItem Content="Absent"/>
-                <toolkit:ListPickerItem Content="Below 100"/>
-                <toolkit:ListPickerItem Content="100 or above"/>
-            </toolkit:ListPicker>
-            <TextBlock Grid.Column="0" Grid.Row="2" Margin="5">Grimace</TextBlock>
-            <toolkit:ListPicker Grid.Column="1" Grid.Row="2" Margin="5" SelectedIndex="0">
-                <toolkit:ListPickerItem Content="No response to stimulation"/>
-                <toolkit:ListPickerItem Content="Grimace/feeble cry"/>
-                <toolkit:ListPickerItem Content="Cry or pull away"/>
-            </toolkit:ListPicker>
-            <TextBlock Grid.Column="0" Grid.Row="3" Margin="5">Activity</TextBlock>
-            <toolkit:ListPicker Grid.Column="1" Grid.Row="3" Margin="5" SelectedIndex="0">
-                <toolkit:ListPickerItem Content="None"/>
-                <toolkit:ListPickerItem Content="Some flexion"/>
-                <toolkit:ListPickerItem Content="Flexed arms and legs"/>
-            </toolkit:ListPicker>
-            <TextBlock Grid.Column="0" Grid.Row="4" Margin="5">Respiration</TextBlock>
-            <toolkit:ListPicker Grid.Column="1" Grid.Row="4" Margin="5" SelectedIndex="0">
-                <toolkit:ListPickerItem Content="Absent"/>
-                <toolkit:ListPickerItem Content="Weak, irregular, gasping"/>
-                <toolkit:ListPickerItem Content="Strong, lusty cry"/>
-            </toolkit:ListPicker>
+            <StackPanel>
+                <StackPanel Grid.Row="0">
+                <TextBlock Margin="5,5,0,0">Appearance</TextBlock>
+                <toolkit:ListPicker Margin="5,0,5,0" SelectedIndex="{Binding Appearance, Mode=TwoWay}">
+                    <toolkit:ListPickerItem Content="Blue or pale all over" />
+                    <toolkit:ListPickerItem Content="Blue at extremities, body pink" />
+                    <toolkit:ListPickerItem Content="Body and extremities pink" />
+                </toolkit:ListPicker>
+                </StackPanel>
+                <StackPanel Grid.Row="1">
+                <TextBlock Margin="5,5,0,0">Pulse</TextBlock>
+                <toolkit:ListPicker Margin="5,0,5,0" SelectedIndex="{Binding Pulse, Mode=TwoWay}">
+                    <toolkit:ListPickerItem Content="Absent"/>
+                    <toolkit:ListPickerItem Content="Below 100"/>
+                    <toolkit:ListPickerItem Content="100 or above"/>
+                </toolkit:ListPicker>
+                </StackPanel>
+                <StackPanel Grid.Row="2">
+                <TextBlock Margin="5,5,0,0">Grimace</TextBlock>
+                <toolkit:ListPicker Margin="5,0,5,0" SelectedIndex="{Binding Grimace, Mode=TwoWay}">
+                    <toolkit:ListPickerItem Content="No response to stimulation"/>
+                    <toolkit:ListPickerItem Content="Grimace/feeble cry when stimulated"/>
+                    <toolkit:ListPickerItem Content="Cry or pull away when stimulated"/>
+                </toolkit:ListPicker>
+                </StackPanel>
+                <StackPanel Grid.Row="3">
+                <TextBlock Margin="5,5,0,0">Activity</TextBlock>
+                <toolkit:ListPicker Margin="5,0,5,0" SelectedIndex="{Binding Activity, Mode=TwoWay}">
+                    <toolkit:ListPickerItem Content="None"/>
+                    <toolkit:ListPickerItem Content="Some flexion"/>
+                    <toolkit:ListPickerItem Content="Flexed arms and legs, resist extension"/>
+                </toolkit:ListPicker>
+                </StackPanel>
+                <StackPanel Grid.Row="4">
+                    <TextBlock Margin="5,5,0,0">Respiration</TextBlock>
+                    <toolkit:ListPicker Margin="5,0,5,0" SelectedIndex="{Binding Respiration, Mode=TwoWay}">
+                        <toolkit:ListPickerItem Content="Absent"/>
+                        <toolkit:ListPickerItem Content="Weak, irregular, gasping"/>
+                        <toolkit:ListPickerItem Content="Strong, lusty cry"/>
+                    </toolkit:ListPicker>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock Text="Score: "/>
+                    <TextBlock Text="{Binding Score, Mode=OneWay}"/>
+                </StackPanel>
+            </StackPanel>
         </Grid>
     </Grid>
  

@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Collections.ObjectModel;
 
 
-namespace MediCalc
+namespace MediCalc.ViewModels
 {
 	public class MainViewModel : INotifyPropertyChanged
 	{
@@ -50,8 +50,8 @@ namespace MediCalc
 		public void LoadData()
 		{
 			// Sample data; replace with real data
-			Items.Add(new ItemViewModel { LineOne = "Equation one", LineTwo = "Maecenas praesent accumsan bibendum", LineThree = "Facilisi faucibus habitant inceptos interdum lobortis nascetur pharetra placerat pulvinar sagittis senectus sociosqu" });
-			Items.Add(new ItemViewModel { LineOne = "Equation two", LineTwo = "Dictumst eleifend facilisi faucibus", LineThree = "Suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum dictumst eleifend facilisi faucibus" });
+			Items.Add(new ItemViewModel { LineOne = "APGAR", LineTwo = "For assessing newborn babies", Target = "/Pages/Apgar.xaml", LineThree = "Facilisi faucibus habitant inceptos interdum lobortis nascetur pharetra placerat pulvinar sagittis senectus sociosqu" });
+			Items.Add(new ItemViewModel { LineOne = "GFR", LineTwo = "Estimate glomerular filtration rate", Target = "/Pages/GFR.xaml", LineThree = "Suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum dictumst eleifend facilisi faucibus" });
 			Items.Add(new ItemViewModel { LineOne = "Equation three", LineTwo = "Habitant inceptos interdum lobortis", LineThree = "Habitant inceptos interdum lobortis nascetur pharetra placerat pulvinar sagittis senectus sociosqu suscipit torquent" });
 			Items.Add(new ItemViewModel { LineOne = "Equation four", LineTwo = "Nascetur pharetra placerat pulvinar", LineThree = "Ultrices vehicula volutpat maecenas praesent accumsan bibendum dictumst eleifend facilisi faucibus habitant inceptos" });
 			Items.Add(new ItemViewModel { LineOne = "Equation five", LineTwo = "Maecenas praesent accumsan bibendum", LineThree = "Maecenas praesent accumsan bibendum dictumst eleifend facilisi faucibus habitant inceptos interdum lobortis nascetur" });

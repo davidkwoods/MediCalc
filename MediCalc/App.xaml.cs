@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Navigation;
+using MediCalc.ViewModels;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 
@@ -8,6 +9,11 @@ namespace MediCalc
 	public partial class App : Application
 	{
 		private static MainViewModel viewModel = null;
+
+		public ViewModelLocator ViewModelLocator
+		{
+			get { return (ViewModelLocator) Resources["ViewModelLocator"]; }
+		}
 
 		/// <summary>
 		/// A static ViewModel used by the views to bind against.

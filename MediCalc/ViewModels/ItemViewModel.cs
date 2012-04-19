@@ -1,9 +1,9 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace MediCalc
+namespace MediCalc.ViewModels
 {
-	public class ItemViewModel : INotifyPropertyChanged
+	public class ItemViewModel : ObservableObject
 	{
 		private string _lineOne;
 		/// <summary>
@@ -21,7 +21,7 @@ namespace MediCalc
 				if (value != _lineOne)
 				{
 					_lineOne = value;
-					NotifyPropertyChanged("LineOne");
+					NotifyPropertyChanged(() => LineOne);
 				}
 			}
 		}
@@ -42,7 +42,7 @@ namespace MediCalc
 				if (value != _lineTwo)
 				{
 					_lineTwo = value;
-					NotifyPropertyChanged("LineTwo");
+					NotifyPropertyChanged(() => LineTwo);
 				}
 			}
 		}
@@ -63,18 +63,22 @@ namespace MediCalc
 				if (value != _lineThree)
 				{
 					_lineThree = value;
-					NotifyPropertyChanged("LineThree");
+					NotifyPropertyChanged(() => LineThree);
 				}
 			}
 		}
 
-		public event PropertyChangedEventHandler PropertyChanged;
-		private void NotifyPropertyChanged(String propertyName)
+		private string target;
+		public string Target
 		{
-			PropertyChangedEventHandler handler = PropertyChanged;
-			if (null != handler)
+			get { return target; }
+			set
 			{
-				handler(this, new PropertyChangedEventArgs(propertyName));
+				if (target != value)
+				{
+					target = value;
+					NotifyPropertyChanged(() => Target);
+				}
 			}
 		}
 	}
