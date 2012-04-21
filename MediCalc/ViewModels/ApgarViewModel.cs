@@ -2,6 +2,11 @@
 {
 	public class ApgarViewModel : ViewModelBase
 	{
+		public string Title
+		{
+			get { return string.Format(Strings.FormulaTitleFormatString, Strings.AppTitle, Strings.ApgarTitle); }
+		}
+
 		private int appearance;
 		public int Appearance
 		{

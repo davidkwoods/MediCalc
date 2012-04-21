@@ -19,7 +19,7 @@
     <Grid x:Name="LayoutRoot" Background="Transparent">
  
         <!--Panorama control-->
-        <controls:Panorama Title="MediCalc">
+        <controls:Panorama Title="{Binding Strings.AppTitle, Source={StaticResource Strings}}">
             <controls:Panorama.Background>
                 <ImageBrush ImageSource="MediCalcPanBg.jpg"/>
             </controls:Panorama.Background>

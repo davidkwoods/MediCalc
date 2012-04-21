@@ -12,7 +12,7 @@ namespace MediCalc
 
 		public ViewModelLocator ViewModelLocator
 		{
-			get { return (ViewModelLocator) Resources["ViewModelLocator"]; }
+			get { return (ViewModelLocator)Resources["ViewModelLocator"]; }
 		}
 
 		/// <summary>

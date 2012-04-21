@@ -5,7 +5,8 @@
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:sys="clr-namespace:System;assembly=mscorlib"
-    xmlns:vm="clr-namespace:MediCalc.ViewModels">
+    xmlns:vm="clr-namespace:MediCalc.ViewModels"
+    xmlns:local="clr-namespace:MediCalc">
 
     <!--Application Resources-->
     <Application.Resources>
@@ -13,8 +14,9 @@
     		<ResourceDictionary.MergedDictionaries>
     			<ResourceDictionary Source="Pages/ResourceDictionary.xaml"/>
     		</ResourceDictionary.MergedDictionaries>
+            <local:LocalizedStrings x:Key="Strings"/>
             <vm:ViewModelLocator x:Key="ViewModelLocator"/>
-    	</ResourceDictionary>
+        </ResourceDictionary>
     </Application.Resources>
 
     <Application.ApplicationLifetimeObjects>

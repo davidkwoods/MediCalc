@@ -13,6 +13,11 @@ namespace MediCalc.ViewModels
 {
 	public class GFRViewModel : ViewModelBase
 	{
+		public string Title
+		{
+			get { return string.Format(Strings.FormulaTitleFormatString, Strings.AppTitle, Strings.GfrTitle); }
+		}
+
 		private bool isFemale;
 		public bool IsFemale
 		{
