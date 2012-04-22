@@ -25,15 +25,15 @@
                     <StackPanel>
                         <CheckBox Content="{Binding Strings.Female, Source={StaticResource Strings}}" IsChecked="{Binding IsFemale, Mode=TwoWay}"/>
                         <CheckBox Content="{Binding Strings.AfricanAmerican, Source={StaticResource Strings}}" IsChecked="{Binding IsAM, Mode=TwoWay}"/>
-                        <TextBlock Text="Creatinine"/>
+                        <TextBlock Text="{Binding Strings.Creatinine, Source={StaticResource Strings}}"/>
                         <TextBox Text="{Binding Creatinine, Mode=TwoWay}"/>
-                        <TextBlock Text="Age"/>
+                        <TextBlock Text="{Binding Strings.Age, Source={StaticResource Strings}}"/>
                         <TextBox Text="{Binding Age, Mode=TwoWay}"/>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                             <TextBlock Text="GFR = " Margin="0,5,0,0"/>
                             <TextBlock Text="{Binding GFR, Mode=OneWay}" Margin="0,5,0,0"/>
                             <TextBlock Text=" mL/min/1.73m" Margin="0,5,0,0"/>
-                            <TextBlock Text="2"/>
+                            <TextBlock Text="2" FontSize="15" />
                         </StackPanel>
                     </StackPanel>
                 </Grid>
@@ -42,7 +42,7 @@
             <!--Pivot item two-->
             <controls:PivotItem Header="{Binding Strings.ExplanationTabTitle, Source={StaticResource Strings}}">
                 <Grid>
-                    <TextBlock Text="From the Modification of Diet in Renal Diseas study, is used to estimate glomerular filtration rate or the flow rate of filtered fluid through the kidney.  Will underestimate GFR in patients with GFR >60 mL/min." TextWrapping="Wrap"/>
+                    <TextBlock Text="{Binding Strings.GfrExplanation, Source={StaticResource Strings}}" TextWrapping="Wrap"/>
                 </Grid>
             </controls:PivotItem>
         </controls:Pivot>

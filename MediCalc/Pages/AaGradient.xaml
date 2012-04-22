@@ -27,6 +27,22 @@
                             <TextBlock Text="FiO"/>
                             <TextBlock Text="2" Margin="0,9,0,0" FontSize="15"/>
                         </StackPanel>
+                        <TextBox Text="{Binding FiO2, Mode=TwoWay}"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="PaCO"/>
+                            <TextBlock Text="2" Margin="0,9,0,0" FontSize="15"/>
+                        </StackPanel>
+                        <TextBox Text="{Binding PaCO2, Mode=TwoWay}"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="PaO"/>
+                            <TextBlock Text="2" Margin="0,9,0,0" FontSize="15"/>
+                        </StackPanel>
+                        <TextBox Text="{Binding PaO2, Mode=TwoWay}"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <TextBlock Text="A-a Gradient = "/>
+                            <TextBlock Text="{Binding Result}"/>
+                            <TextBlock Text="mmHg"/>
+                        </StackPanel>
                     </StackPanel>
                 </Grid>
             </controls:PivotItem>

@@ -88,6 +88,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Strings.resx</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\AaGradientViewModel.cs" />
     <Compile Include="ViewModels\ApgarViewModel.cs" />
     <Compile Include="ViewModels\GFRViewModel.cs" />
     <Compile Include="ViewModels\ItemViewModel.cs" />

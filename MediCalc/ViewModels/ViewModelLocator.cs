@@ -45,5 +45,16 @@ namespace MediCalc.ViewModels
 				return gfrViewModel;
 			}
 		}
+
+		private AaGradientViewModel aaGradientViewModel;
+		public AaGradientViewModel AaGradientViewModel
+		{
+			get
+			{
+				if (aaGradientViewModel == null)
+					aaGradientViewModel = new AaGradientViewModel();
+				return aaGradientViewModel;
+			}
+		}
 	}
 }

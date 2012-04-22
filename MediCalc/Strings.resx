@@ -117,17 +117,92 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AaGradientExplanation" xml:space="preserve">
+    <value>Predicts the degree of shunting in the lungs by comparing the partial pressure of O2 in the alveoli to the partial pressure of O2 in the arterial
+blood. The difference between the two partial pressures indicates how well the oxygen is moving form the alveoli into the blood.</value>
+  </data>
   <data name="AaGradientTitle" xml:space="preserve">
     <value>A-a Gradient</value>
   </data>
   <data name="AfricanAmerican" xml:space="preserve">
     <value>African American</value>
   </data>
+  <data name="Age" xml:space="preserve">
+    <value>Age</value>
+  </data>
+  <data name="ApgarActivity" xml:space="preserve">
+    <value>Activity</value>
+  </data>
+  <data name="ApgarActivity0" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="ApgarActivity1" xml:space="preserve">
+    <value>Some flexion</value>
+  </data>
+  <data name="ApgarActivity2" xml:space="preserve">
+    <value>Flexed arms and legs, resist extension</value>
+  </data>
+  <data name="ApgarAppearance" xml:space="preserve">
+    <value>Appearance</value>
+  </data>
+  <data name="ApgarAppearance0" xml:space="preserve">
+    <value>Blue or pale all over</value>
+  </data>
+  <data name="ApgarAppearance1" xml:space="preserve">
+    <value>Blue at extremities, body pink</value>
+  </data>
+  <data name="ApgarAppearance2" xml:space="preserve">
+    <value>Body and extremities pink</value>
+  </data>
+  <data name="ApgarExplanation" xml:space="preserve">
+    <value>Used to grade newborn babies on 5 criteria on a scale of 0‐2. Performed at one and five minutes after birth. If the score is low, it may be
+repeated at 10, 15 and 30 minutes as well. Scores are summed and the total score is evaluated. 3 and below is considered critically low, 4‐6
+is low, 7‐10 is normal.</value>
+  </data>
+  <data name="ApgarGrimace" xml:space="preserve">
+    <value>Grimace</value>
+  </data>
+  <data name="ApgarGrimace0" xml:space="preserve">
+    <value>No response to stimulation</value>
+  </data>
+  <data name="ApgarGrimace1" xml:space="preserve">
+    <value>Grimace/feeble cry when stimulated</value>
+  </data>
+  <data name="ApgarGrimace2" xml:space="preserve">
+    <value>Cry or pull away when stimluated</value>
+  </data>
+  <data name="ApgarPulse" xml:space="preserve">
+    <value>Pulse</value>
+  </data>
+  <data name="ApgarPulse0" xml:space="preserve">
+    <value>Absent</value>
+  </data>
+  <data name="ApgarPulse1" xml:space="preserve">
+    <value>Below 100</value>
+  </data>
+  <data name="ApgarPulse2" xml:space="preserve">
+    <value>100 or above</value>
+  </data>
+  <data name="ApgarRespiration" xml:space="preserve">
+    <value>Respiration</value>
+  </data>
+  <data name="ApgarRespiration0" xml:space="preserve">
+    <value>Absent</value>
+  </data>
+  <data name="ApgarRespiration1" xml:space="preserve">
+    <value>Weak, irregular, gasping</value>
+  </data>
+  <data name="ApgarRespiration2" xml:space="preserve">
+    <value>Strong, losty cry</value>
+  </data>
   <data name="ApgarTitle" xml:space="preserve">
     <value>APGAR</value>
   </data>
   <data name="AppTitle" xml:space="preserve">
     <value>MediCalc</value>
+  </data>
+  <data name="Creatinine" xml:space="preserve">
+    <value>Creatinine</value>
   </data>
   <data name="ExplanationTabTitle" xml:space="preserve">
     <value>Explanation</value>
@@ -141,6 +216,9 @@
   <data name="FormulaTitleFormatString" xml:space="preserve">
     <value>{0} - {1}</value>
     <comment>{0} = app title, {1} = formula title</comment>
+  </data>
+  <data name="GfrExplanation" xml:space="preserve">
+    <value>From the Modification of Diet in Renal Diseas study, is used to estimate glomerular filtration rate or the flow rate of filtered fluid through the kidney.  Will underestimate GFR in patients with GFR &gt;60 mL/min.</value>
   </data>
   <data name="GfrTitle" xml:space="preserve">
     <value>GFR (MRDR)</value>

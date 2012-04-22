@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
@@ -17,66 +18,63 @@
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-
-        <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock x:Name="ApplicationTitle" Text="{Binding Strings.AppTitle, Source={StaticResource Strings}}" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock x:Name="PageTitle" Text="{Binding Title}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
-        </StackPanel>
-
-        <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <StackPanel>
-                <StackPanel Grid.Row="0">
-                <TextBlock Margin="5,5,0,0">Appearance</TextBlock>
-                <toolkit:ListPicker Margin="5,0,5,0" SelectedIndex="{Binding Appearance, Mode=TwoWay}">
-                    <toolkit:ListPickerItem Content="Blue or pale all over" />
-                    <toolkit:ListPickerItem Content="Blue at extremities, body pink" />
-                    <toolkit:ListPickerItem Content="Body and extremities pink" />
-                </toolkit:ListPicker>
-                </StackPanel>
-                <StackPanel Grid.Row="1">
-                <TextBlock Margin="5,5,0,0">Pulse</TextBlock>
-                <toolkit:ListPicker Margin="5,0,5,0" SelectedIndex="{Binding Pulse, Mode=TwoWay}">
-                    <toolkit:ListPickerItem Content="Absent"/>
-                    <toolkit:ListPickerItem Content="Below 100"/>
-                    <toolkit:ListPickerItem Content="100 or above"/>
-                </toolkit:ListPicker>
-                </StackPanel>
-                <StackPanel Grid.Row="2">
-                <TextBlock Margin="5,5,0,0">Grimace</TextBlock>
-                <toolkit:ListPicker Margin="5,0,5,0" SelectedIndex="{Binding Grimace, Mode=TwoWay}">
-                    <toolkit:ListPickerItem Content="No response to stimulation"/>
-                    <toolkit:ListPickerItem Content="Grimace/feeble cry when stimulated"/>
-                    <toolkit:ListPickerItem Content="Cry or pull away when stimulated"/>
-                </toolkit:ListPicker>
-                </StackPanel>
-                <StackPanel Grid.Row="3">
-                <TextBlock Margin="5,5,0,0">Activity</TextBlock>
-                <toolkit:ListPicker Margin="5,0,5,0" SelectedIndex="{Binding Activity, Mode=TwoWay}">
-                    <toolkit:ListPickerItem Content="None"/>
-                    <toolkit:ListPickerItem Content="Some flexion"/>
-                    <toolkit:ListPickerItem Content="Flexed arms and legs, resist extension"/>
-                </toolkit:ListPicker>
-                </StackPanel>
-                <StackPanel Grid.Row="4">
-                    <TextBlock Margin="5,5,0,0">Respiration</TextBlock>
-                    <toolkit:ListPicker Margin="5,0,5,0" SelectedIndex="{Binding Respiration, Mode=TwoWay}">
-                        <toolkit:ListPickerItem Content="Absent"/>
-                        <toolkit:ListPickerItem Content="Weak, irregular, gasping"/>
-                        <toolkit:ListPickerItem Content="Strong, lusty cry"/>
-                    </toolkit:ListPicker>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                    <TextBlock Text="Score: "/>
-                    <TextBlock Text="{Binding Score, Mode=OneWay}"/>
-                </StackPanel>
-            </StackPanel>
-        </Grid>
+        <controls:Pivot Title="{Binding Title}">
+            <controls:PivotItem Header="{Binding Strings.FormulaTabTitle, Source={StaticResource Strings}}">
+                <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+                    <StackPanel>
+                        <StackPanel Grid.Row="0">
+                            <TextBlock Margin="5,5,0,0" Text="{Binding Strings.ApgarAppearance, Source={StaticResource Strings}}" />
+                            <toolkit:ListPicker Margin="5,0,5,0" SelectedIndex="{Binding Appearance, Mode=TwoWay}">
+                                <toolkit:ListPickerItem Content="{Binding Strings.ApgarAppearance0, Source={StaticResource Strings}}" />
+                                <toolkit:ListPickerItem Content="{Binding Strings.ApgarAppearance1, Source={StaticResource Strings}}" />
+                                <toolkit:ListPickerItem Content="{Binding Strings.ApgarAppearance2, Source={StaticResource Strings}}" />
+                        </toolkit:ListPicker>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1">
+                            <TextBlock Margin="5,5,0,0" Text="{Binding Strings.ApgarPulse, Source={StaticResource Strings}}" />
+                            <toolkit:ListPicker Margin="5,0,5,0" SelectedIndex="{Binding Pulse, Mode=TwoWay}">
+                                <toolkit:ListPickerItem Content="{Binding Strings.ApgarPulse0, Source={StaticResource Strings}}"/>
+                                <toolkit:ListPickerItem Content="{Binding Strings.ApgarPulse1, Source={StaticResource Strings}}"/>
+                                <toolkit:ListPickerItem Content="{Binding Strings.ApgarPulse2, Source={StaticResource Strings}}"/>
+                        </toolkit:ListPicker>
+                        </StackPanel>
+                        <StackPanel Grid.Row="2">
+                            <TextBlock Margin="5,5,0,0" Text="{Binding Strings.ApgarGrimace, Source={StaticResource Strings}}" />
+                            <toolkit:ListPicker Margin="5,0,5,0" SelectedIndex="{Binding Grimace, Mode=TwoWay}">
+                                <toolkit:ListPickerItem Content="{Binding Strings.ApgarGrimace0, Source={StaticResource Strings}}"/>
+                                <toolkit:ListPickerItem Content="{Binding Strings.ApgarGrimace1, Source={StaticResource Strings}}"/>
+                                <toolkit:ListPickerItem Content="{Binding Strings.ApgarGrimace2, Source={StaticResource Strings}}"/>
+                        </toolkit:ListPicker>
+                        </StackPanel>
+                        <StackPanel Grid.Row="3">
+                            <TextBlock Margin="5,5,0,0" Text="{Binding Strings.ApgarActivity, Source={StaticResource Strings}}" />
+                            <toolkit:ListPicker Margin="5,0,5,0" SelectedIndex="{Binding Activity, Mode=TwoWay}">
+                                <toolkit:ListPickerItem Content="{Binding Strings.ApgarActivity0, Source={StaticResource Strings}}"/>
+                                <toolkit:ListPickerItem Content="{Binding Strings.ApgarActivity1, Source={StaticResource Strings}}"/>
+                                <toolkit:ListPickerItem Content="{Binding Strings.ApgarActivity2, Source={StaticResource Strings}}"/>
+                        </toolkit:ListPicker>
+                        </StackPanel>
+                        <StackPanel Grid.Row="4">
+                            <TextBlock Margin="5,5,0,0" Text="{Binding Strings.ApgarRespiration, Source={StaticResource Strings}}" />
+                            <toolkit:ListPicker Margin="5,0,5,0" SelectedIndex="{Binding Respiration, Mode=TwoWay}">
+                                <toolkit:ListPickerItem Content="{Binding Strings.ApgarRespiration0, Source={StaticResource Strings}}"/>
+                                <toolkit:ListPickerItem Content="{Binding Strings.ApgarRespiration1, Source={StaticResource Strings}}"/>
+                                <toolkit:ListPickerItem Content="{Binding Strings.ApgarRespiration2, Source={StaticResource Strings}}"/>
+                            </toolkit:ListPicker>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <TextBlock Text="Score: "/>
+                            <TextBlock Text="{Binding Score, Mode=OneWay}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </controls:PivotItem>
+            <controls:PivotItem Header="{Binding Strings.ExplanationTabTitle, Source={StaticResource Strings}}">
+                <Grid>
+                    <TextBlock Text="{Binding Strings.ApgarExplanation, Source={StaticResource Strings}}" TextWrapping="Wrap"/>
+                </Grid>
+            </controls:PivotItem>
+        </controls:Pivot>
     </Grid>
  
     <!--Sample code showing usage of ApplicationBar-->
