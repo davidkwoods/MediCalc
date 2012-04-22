@@ -76,8 +76,14 @@
     <Compile Include="Pages\AaGradient.xaml.cs">
       <DependentUpon>AaGradient.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ABCD2.xaml.cs">
+      <DependentUpon>ABCD2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Apgar.xaml.cs">
       <DependentUpon>Apgar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BMI.xaml.cs">
+      <DependentUpon>BMI.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\GFR.xaml.cs">
       <DependentUpon>GFR.xaml</DependentUpon>
@@ -89,7 +95,9 @@
       <DependentUpon>Strings.resx</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\AaGradientViewModel.cs" />
+    <Compile Include="ViewModels\ABCD2ViewModel.cs" />
     <Compile Include="ViewModels\ApgarViewModel.cs" />
+    <Compile Include="ViewModels\BMIViewModel.cs" />
     <Compile Include="ViewModels\GFRViewModel.cs" />
     <Compile Include="ViewModels\ItemViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
@@ -113,7 +121,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\ABCD2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Apgar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\BMI.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

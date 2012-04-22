@@ -56,5 +56,27 @@ namespace MediCalc.ViewModels
 				return aaGradientViewModel;
 			}
 		}
+
+		private BMIViewModel bmiViewModel;
+		public BMIViewModel BMIViewModel
+		{
+			get
+			{
+				if (bmiViewModel == null)
+					bmiViewModel = new BMIViewModel();
+				return bmiViewModel;
+			}
+		}
+
+		private ABCD2ViewModel abcd2ViewModel;
+		public ABCD2ViewModel ABCD2ViewModel
+		{
+			get
+			{
+				if (abcd2ViewModel == null)
+					abcd2ViewModel = new ABCD2ViewModel();
+				return abcd2ViewModel;
+			}
+		}
 	}
 }

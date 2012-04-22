@@ -80,6 +80,162 @@ namespace MediCalc {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Less than 60.
+        /// </summary>
+        public static string ABCD2Age0 {
+            get {
+                return ResourceManager.GetString("ABCD2Age0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 60 or older.
+        /// </summary>
+        public static string ABCD2Age1 {
+            get {
+                return ResourceManager.GetString("ABCD2Age1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Normal.
+        /// </summary>
+        public static string ABCD2BP0 {
+            get {
+                return ResourceManager.GetString("ABCD2BP0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Elevated (140/90 or higher).
+        /// </summary>
+        public static string ABCD2BP1 {
+            get {
+                return ResourceManager.GetString("ABCD2BP1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Other than those specified.
+        /// </summary>
+        public static string ABCD2CF0 {
+            get {
+                return ResourceManager.GetString("ABCD2CF0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Speech disturbance, no weakness.
+        /// </summary>
+        public static string ABCD2CF1 {
+            get {
+                return ResourceManager.GetString("ABCD2CF1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unilateral (one sided) weakness.
+        /// </summary>
+        public static string ABCD2CF2 {
+            get {
+                return ResourceManager.GetString("ABCD2CF2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No diabetes.
+        /// </summary>
+        public static string ABCD2Di0 {
+            get {
+                return ResourceManager.GetString("ABCD2Di0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Diabetes present.
+        /// </summary>
+        public static string ABCD2Di1 {
+            get {
+                return ResourceManager.GetString("ABCD2Di1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Less than 10 minutes.
+        /// </summary>
+        public static string ABCD2Du0 {
+            get {
+                return ResourceManager.GetString("ABCD2Du0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 10-59 minutes.
+        /// </summary>
+        public static string ABCD2Du1 {
+            get {
+                return ResourceManager.GetString("ABCD2Du1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 60 minutes or longer.
+        /// </summary>
+        public static string ABCD2Du2 {
+            get {
+                return ResourceManager.GetString("ABCD2Du2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to When a patient experiences a Transient Ischemic Attack (TIA) the ABCD2 score is used to determine the risk for stroke within the first two
+        ///days post attack. The ABCD2 score is graded on 5 criteria: clinical features, age, duration of TIA, blood pressure, and presence of diabetes.
+        ///The evaluation is added up and the score ranges from 0‐7: 0‐3 is low (2 day risk = 1.0%, 7 day risk = 1.2), 4‐5 is moderate (2 day risk = 4.1%, 7
+        ///day risk = 5.9%), 6‐7 is high (2 day risk = 8.1%, 7 day risk = 11.7%)..
+        /// </summary>
+        public static string ABCD2Explanation {
+            get {
+                return ResourceManager.GetString("ABCD2Explanation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  (high).
+        /// </summary>
+        public static string ABCD2High {
+            get {
+                return ResourceManager.GetString("ABCD2High", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  (low).
+        /// </summary>
+        public static string ABCD2Low {
+            get {
+                return ResourceManager.GetString("ABCD2Low", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  (moderate).
+        /// </summary>
+        public static string ABCD2Mod {
+            get {
+                return ResourceManager.GetString("ABCD2Mod", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ABCD2.
+        /// </summary>
+        public static string ABCD2Title {
+            get {
+                return ResourceManager.GetString("ABCD2Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to African American.
         /// </summary>
         public static string AfricanAmerican {
@@ -307,11 +463,120 @@ namespace MediCalc {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Blood Pressure.
+        /// </summary>
+        public static string BloodPressure {
+            get {
+                return ResourceManager.GetString("BloodPressure", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Used for adults over 20 years old, used to indicate weight status and correlates with body fat. May overestimate BMI in athletes and those
+        ///with muscular build. May underestimate in the elderly and in those who have lost muscle mass..
+        /// </summary>
+        public static string BmiExplanation {
+            get {
+                return ResourceManager.GetString("BmiExplanation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Height (in inches).
+        /// </summary>
+        public static string BmiHeight {
+            get {
+                return ResourceManager.GetString("BmiHeight", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  (normal).
+        /// </summary>
+        public static string BmiNormal {
+            get {
+                return ResourceManager.GetString("BmiNormal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  (obese).
+        /// </summary>
+        public static string BmiObese {
+            get {
+                return ResourceManager.GetString("BmiObese", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  (overweight).
+        /// </summary>
+        public static string BmiOverweight {
+            get {
+                return ResourceManager.GetString("BmiOverweight", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BMI.
+        /// </summary>
+        public static string BmiTitle {
+            get {
+                return ResourceManager.GetString("BmiTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  (underweight).
+        /// </summary>
+        public static string BmiUnderweight {
+            get {
+                return ResourceManager.GetString("BmiUnderweight", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Weight (in pounds).
+        /// </summary>
+        public static string BmiWeight {
+            get {
+                return ResourceManager.GetString("BmiWeight", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clinical Features.
+        /// </summary>
+        public static string ClinicalFeatures {
+            get {
+                return ResourceManager.GetString("ClinicalFeatures", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Creatinine.
         /// </summary>
         public static string Creatinine {
             get {
                 return ResourceManager.GetString("Creatinine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Diabetes.
+        /// </summary>
+        public static string Diabetes {
+            get {
+                return ResourceManager.GetString("Diabetes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Duration.
+        /// </summary>
+        public static string Duration {
+            get {
+                return ResourceManager.GetString("Duration", resourceCulture);
             }
         }
         
@@ -366,6 +631,15 @@ namespace MediCalc {
         public static string GfrTitle {
             get {
                 return ResourceManager.GetString("GfrTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Score = .
+        /// </summary>
+        public static string ScoreEquals {
+            get {
+                return ResourceManager.GetString("ScoreEquals", resourceCulture);
             }
         }
     }

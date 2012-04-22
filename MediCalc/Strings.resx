@@ -124,6 +124,60 @@ blood. The difference between the two partial pressures indicates how well the o
   <data name="AaGradientTitle" xml:space="preserve">
     <value>A-a Gradient</value>
   </data>
+  <data name="ABCD2Age0" xml:space="preserve">
+    <value>Less than 60</value>
+  </data>
+  <data name="ABCD2Age1" xml:space="preserve">
+    <value>60 or older</value>
+  </data>
+  <data name="ABCD2BP0" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="ABCD2BP1" xml:space="preserve">
+    <value>Elevated (140/90 or higher)</value>
+  </data>
+  <data name="ABCD2CF0" xml:space="preserve">
+    <value>Other than those specified</value>
+  </data>
+  <data name="ABCD2CF1" xml:space="preserve">
+    <value>Speech disturbance, no weakness</value>
+  </data>
+  <data name="ABCD2CF2" xml:space="preserve">
+    <value>Unilateral (one sided) weakness</value>
+  </data>
+  <data name="ABCD2Di0" xml:space="preserve">
+    <value>No diabetes</value>
+  </data>
+  <data name="ABCD2Di1" xml:space="preserve">
+    <value>Diabetes present</value>
+  </data>
+  <data name="ABCD2Du0" xml:space="preserve">
+    <value>Less than 10 minutes</value>
+  </data>
+  <data name="ABCD2Du1" xml:space="preserve">
+    <value>10-59 minutes</value>
+  </data>
+  <data name="ABCD2Du2" xml:space="preserve">
+    <value>60 minutes or longer</value>
+  </data>
+  <data name="ABCD2Explanation" xml:space="preserve">
+    <value>When a patient experiences a Transient Ischemic Attack (TIA) the ABCD2 score is used to determine the risk for stroke within the first two
+days post attack. The ABCD2 score is graded on 5 criteria: clinical features, age, duration of TIA, blood pressure, and presence of diabetes.
+The evaluation is added up and the score ranges from 0‐7: 0‐3 is low (2 day risk = 1.0%, 7 day risk = 1.2), 4‐5 is moderate (2 day risk = 4.1%, 7
+day risk = 5.9%), 6‐7 is high (2 day risk = 8.1%, 7 day risk = 11.7%).</value>
+  </data>
+  <data name="ABCD2High" xml:space="preserve">
+    <value> (high)</value>
+  </data>
+  <data name="ABCD2Low" xml:space="preserve">
+    <value> (low)</value>
+  </data>
+  <data name="ABCD2Mod" xml:space="preserve">
+    <value> (moderate)</value>
+  </data>
+  <data name="ABCD2Title" xml:space="preserve">
+    <value>ABCD2</value>
+  </data>
   <data name="AfricanAmerican" xml:space="preserve">
     <value>African American</value>
   </data>
@@ -201,8 +255,45 @@ is low, 7‐10 is normal.</value>
   <data name="AppTitle" xml:space="preserve">
     <value>MediCalc</value>
   </data>
+  <data name="BloodPressure" xml:space="preserve">
+    <value>Blood Pressure</value>
+  </data>
+  <data name="BmiExplanation" xml:space="preserve">
+    <value>Used for adults over 20 years old, used to indicate weight status and correlates with body fat. May overestimate BMI in athletes and those
+with muscular build. May underestimate in the elderly and in those who have lost muscle mass.</value>
+  </data>
+  <data name="BmiHeight" xml:space="preserve">
+    <value>Height (in inches)</value>
+  </data>
+  <data name="BmiNormal" xml:space="preserve">
+    <value> (normal)</value>
+  </data>
+  <data name="BmiObese" xml:space="preserve">
+    <value> (obese)</value>
+  </data>
+  <data name="BmiOverweight" xml:space="preserve">
+    <value> (overweight)</value>
+  </data>
+  <data name="BmiTitle" xml:space="preserve">
+    <value>BMI</value>
+  </data>
+  <data name="BmiUnderweight" xml:space="preserve">
+    <value> (underweight)</value>
+  </data>
+  <data name="BmiWeight" xml:space="preserve">
+    <value>Weight (in pounds)</value>
+  </data>
+  <data name="ClinicalFeatures" xml:space="preserve">
+    <value>Clinical Features</value>
+  </data>
   <data name="Creatinine" xml:space="preserve">
     <value>Creatinine</value>
+  </data>
+  <data name="Diabetes" xml:space="preserve">
+    <value>Diabetes</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Duration</value>
   </data>
   <data name="ExplanationTabTitle" xml:space="preserve">
     <value>Explanation</value>
@@ -222,5 +313,8 @@ is low, 7‐10 is normal.</value>
   </data>
   <data name="GfrTitle" xml:space="preserve">
     <value>GFR (MRDR)</value>
+  </data>
+  <data name="ScoreEquals" xml:space="preserve">
+    <value>Score = </value>
   </data>
 </root>

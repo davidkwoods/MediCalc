@@ -63,7 +63,7 @@
                             </toolkit:ListPicker>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                            <TextBlock Text="Score: "/>
+                            <TextBlock Text="{Binding Strings.ScoreEquals, Source={StaticResource Strings}}"/>
                             <TextBlock Text="{Binding Score, Mode=OneWay}"/>
                         </StackPanel>
                     </StackPanel>
