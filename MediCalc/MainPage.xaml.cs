@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using Microsoft.Phone.Controls;
+using System;
 
 namespace MediCalc
 {
@@ -22,6 +23,12 @@ namespace MediCalc
 			{
 				App.ViewModel.LoadData();
 			}
+		}
+
+		private void ListBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+		{
+			MediCalc.ViewModels.ItemViewModel item = e.AddedItems[0] as MediCalc.ViewModels.ItemViewModel;
+			NavigationService.Navigate(new Uri(item.Target, UriKind.Relative));
 		}
 	}
 }
