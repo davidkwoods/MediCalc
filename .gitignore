@@ -45,4 +45,4 @@ Thumbs.db
 
 # Exceptions #
 ##############
-!Microsoft.Phone.Controls.Toolkit.dll
+!packages\**\*
