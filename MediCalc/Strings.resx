@@ -247,7 +247,7 @@ is low, 7‐10 is normal.</value>
     <value>Weak, irregular, gasping</value>
   </data>
   <data name="ApgarRespiration2" xml:space="preserve">
-    <value>Strong, losty cry</value>
+    <value>Strong, lusty cry</value>
   </data>
   <data name="ApgarTitle" xml:space="preserve">
     <value>APGAR</value>
