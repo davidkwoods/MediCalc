@@ -45,4 +45,4 @@ Thumbs.db
 
 # Exceptions #
 ##############
-!\packages\SilverlightToolkitWP.4.2011.12.14\lib\sl3-wp\Microsoft.Phone.Controls.Toolkit.dll
+!Microsoft.Phone.Controls.Toolkit.dll
