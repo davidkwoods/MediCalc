@@ -32,6 +32,7 @@ namespace MediCalc.ViewModels
 						height = temp;
 						NotifyPropertyChanged(() => Height);
 						NotifyPropertyChanged(() => Result);
+						NotifyPropertyChanged(() => Category);
 					}
 				}
 			}
@@ -51,6 +52,7 @@ namespace MediCalc.ViewModels
 						weight = temp;
 						NotifyPropertyChanged(() => Weight);
 						NotifyPropertyChanged(() => Result);
+						NotifyPropertyChanged(() => Category);
 					}
 				}
 			}
