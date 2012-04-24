@@ -79,6 +79,9 @@
     <Compile Include="Pages\ABCD2.xaml.cs">
       <DependentUpon>ABCD2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ABComp.xaml.cs">
+      <DependentUpon>ABComp.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Apgar.xaml.cs">
       <DependentUpon>Apgar.xaml</DependentUpon>
     </Compile>
@@ -96,6 +99,7 @@
     </Compile>
     <Compile Include="ViewModels\AaGradientViewModel.cs" />
     <Compile Include="ViewModels\ABCD2ViewModel.cs" />
+    <Compile Include="ViewModels\ABCompViewModel.cs" />
     <Compile Include="ViewModels\ApgarViewModel.cs" />
     <Compile Include="ViewModels\BMIViewModel.cs" />
     <Compile Include="ViewModels\GFRViewModel.cs" />
@@ -122,6 +126,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\ABCD2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ABComp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

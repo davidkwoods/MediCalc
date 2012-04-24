@@ -317,4 +317,42 @@ with muscular build. May underestimate in the elderly and in those who have lost
   <data name="ScoreEquals" xml:space="preserve">
     <value>Score = </value>
   </data>
+  <data name="ABCompTitle" xml:space="preserve">
+    <value>Acid Base Compensation</value>
+  </data>
+  <data name="Actual" xml:space="preserve">
+    <value>Actual</value>
+  </data>
+  <data name="Expected" xml:space="preserve">
+    <value>Expected</value>
+  </data>
+  <data name="High" xml:space="preserve">
+    <value>High</value>
+  </data>
+  <data name="IndicativeOfFormat" xml:space="preserve">
+    <value>Indicative of {0}</value>
+    <comment>{0} = thing being indicated</comment>
+  </data>
+  <data name="Low" xml:space="preserve">
+    <value>Low</value>
+  </data>
+  <data name="MetaAcid" xml:space="preserve">
+    <value>Metabolic Acidosis</value>
+  </data>
+  <data name="MetaAlka" xml:space="preserve">
+    <value>Metabolic Alkalosis</value>
+  </data>
+  <data name="RespAcid" xml:space="preserve">
+    <value>Respiratory Acidosis</value>
+  </data>
+  <data name="RespAlka" xml:space="preserve">
+    <value>Respiratory Alkalosis</value>
+  </data>
+  <data name="UnderlyingFormat" xml:space="preserve">
+    <value>Actual level is {0} (potential underlying {1})</value>
+    <comment>{0} = high|low, {1} = condition</comment>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
 </root>
